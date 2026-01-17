@@ -95,14 +95,60 @@ header {
   color: var(--color-white);
   padding: var(--spacing-xlarge) var(--spacing-large);
   border-radius: 0 0 var(--border-radius-xxlarge) var(--border-radius-xxlarge);
+  text-align: center;
 }
 
 header h1 {
   margin: 0 0 var(--spacing-small) 0;
+  font-size: 2.5rem;
 }
 
 header p {
-  margin: 0;
+  margin: 0 0 var(--spacing-large) 0;
+  font-size: 1.2rem;
+}
+
+.header-ctas {
+  display: flex;
+  gap: var(--spacing-medium);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--border-radius-medium);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all var(--transition-fast);
+  display: inline-block;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.cta-primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+  border: 2px solid var(--color-accent);
+}
+
+.cta-primary:hover,
+.cta-primary:focus {
+  background: var(--color-white);
+  color: var(--color-accent);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.cta-secondary:hover,
+.cta-secondary:focus {
+  background: var(--color-white);
+  color: var(--color-primary);
 }
 
 /* Navigation Styles */
@@ -156,20 +202,97 @@ section {
 footer {
   background: linear-gradient(90deg, var(--color-dark) 90%, var(--color-accent) 100%);
   color: var(--color-white);
-  text-align: center;
-  padding: var(--spacing-large);
+  padding: var(--spacing-xxlarge) var(--spacing-large) var(--spacing-large);
   border-radius: var(--border-radius-xxlarge) var(--border-radius-xxlarge) 0 0;
   margin-top: var(--spacing-xxlarge);
-  letter-spacing: 0.5px;
+}
+
+.footer-content {
+  display: flex;
+  gap: var(--spacing-xxlarge);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto var(--spacing-large);
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: var(--color-accent);
+  margin-top: 0;
+  margin-bottom: var(--spacing-medium);
+}
+
+.footer-section p {
+  margin: var(--spacing-small) 0;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-small);
+}
+
+.footer-links a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--color-accent);
+}
+
+.social-icons {
+  display: flex;
+  gap: var(--spacing-medium);
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  color: var(--color-white);
+  text-decoration: none;
+  padding: var(--spacing-small) var(--spacing-medium);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-small);
+  transition: all var(--transition-fast);
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-large);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 footer a {
-  color: var(--color-accent) !important;
+  color: var(--color-accent);
   text-decoration: underline;
 }
 
-footer p {
-  margin: var(--spacing-small) 0;
+footer a:hover,
+footer a:focus {
+  color: var(--color-white);
 }
 
 /* Heading Styles */
@@ -240,6 +363,31 @@ a:focus {
   box-shadow: 0 6px 24px var(--color-shadow-card);
 }
 
+.hero h2 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: var(--spacing-medium);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-large);
+}
+
+.cta-secondary-large {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.cta-secondary-large:hover,
+.cta-secondary-large:focus {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
 /* CTA Button - index.html specific */
 .cta {
   background: var(--color-accent);
@@ -290,6 +438,83 @@ a:focus {
 .grid > div:hover {
   box-shadow: 0 4px 32px var(--color-shadow-hover);
   border-left: 5px solid var(--color-accent);
+}
+
+/* Event Cards - Homepage */
+.event-card {
+  background: var(--color-card);
+  border-radius: var(--border-radius-large);
+  box-shadow: 0 2px 16px var(--color-shadow-medium);
+  padding: var(--spacing-large);
+  min-width: 260px;
+  flex: 1 1 260px;
+  margin-bottom: var(--spacing-medium);
+  border-left: 5px solid var(--color-accent);
+  transition: all var(--transition-fast);
+}
+
+.event-card:hover {
+  box-shadow: 0 6px 32px var(--color-shadow-hover);
+  transform: translateY(-4px);
+}
+
+.event-card h3 {
+  color: var(--color-accent);
+  margin-top: 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: var(--color-card);
+  padding: var(--spacing-xxlarge) var(--spacing-large);
+  border-radius: var(--border-radius-large);
+  margin: var(--spacing-xxlarge) auto;
+}
+
+.testimonials h2 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 2px 8px var(--color-shadow-light);
+  padding: var(--spacing-large);
+  border-left: 4px solid var(--color-accent);
+}
+
+.testimonial-author {
+  margin-top: var(--spacing-medium);
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-primary) 70%, var(--color-accent) 100%);
+  color: var(--color-white);
+  text-align: center;
+  padding: var(--spacing-xxlarge) var(--spacing-large);
+  border-radius: var(--border-radius-large);
+  margin: var(--spacing-xxlarge) auto;
+}
+
+.cta-section h2 {
+  color: var(--color-white);
+  margin-top: 0;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-large);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-medium);
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Service Card - services.html specific */
