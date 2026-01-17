@@ -2,58 +2,276 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | Matt Gage Consulting</title>
+  <title>Contact The Chapel | Schedule Tour or Book Event</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; margin:0; background:#f6f4e6; color:#2D3748; }
-    header, nav, section, footer { padding:2rem; }
-    header { background: linear-gradient(135deg, #5289fa 70%, #43d9c4 100%); color: #fff; border-radius: 0 0 44px 44px; }
-    nav { background: #fcfcfc; display: flex; gap:2rem; align-items:center; justify-content:center; margin-top:-24px; border-radius: 0 0 26px 26px; box-shadow: 0 4px 14px #e3e3e3; }
-    nav a { color: #5289fa; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 8px; transition: background 0.2s; }
-    nav a:hover { background: #43d9c4; color: #fff; }
-    section { max-width: 900px; margin: auto; }
-    form { background:#fff; padding:2rem; border-radius:8px; box-shadow:0 2px 8px #e3e3e3; }
-    label { font-weight:bold; display: block; margin-top: 1rem; }
-    input, textarea { width:100%; margin-bottom:1rem; padding:.75rem; border-radius:6px; border:1px solid #d3d3d3; box-sizing: border-box; }
-    button { background:#43d9c4; color:#fff; border:none; padding:.75rem 1.5rem; border-radius:6px; margin-top:1rem; cursor:pointer; font-family: inherit; }
-    footer { background:linear-gradient(90deg, #23293a 90%, #43d9c4 100%); color:#fff; text-align:center; border-radius:44px 44px 0 0; margin-top:4rem; }
-    footer a { color:#43d9c4 !important; text-decoration:underline; }
-    @media (max-width: 600px) {nav {flex-direction:column;gap:1rem;} header, footer { border-radius: 0; }}
-  </style>
+  <meta name="description" content="Contact The Chapel to schedule a venue tour, request an event quote, or ask questions. Located at 610 S Dakota Ave, Sioux Falls, SD. Call (605) 376-1847.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Contact Matt Gage Consulting</h1>
-    <p>Your Partner for Midwest Small Business Success</p>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <h1>The Chapel</h1>
+    <p>Sioux Falls' Premier Event Venue</p>
+    <div class="header-ctas">
+      <a href="#tour" class="cta-secondary" aria-label="Jump to tour scheduling form">Schedule a Tour</a>
+      <a href="#book" class="cta-primary" aria-label="Jump to event booking form">Book Your Event</a>
+    </div>
   </header>
-  <nav>
+
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
+    <a href="events.html">Host Your Event</a>
+    <a href="venue.html">Venue Features</a>
+    <a href="packages.html">Packages & Pricing</a>
     <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" aria-current="page">Contact</a>
   </nav>
-  <section>
-    <h2>Let's Grow Your Business</h2>
-    <form action="mailto:matt@mattgage.net" method="post" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="company">Company</label>
-      <input type="text" id="company" name="company">
-      <label for="phone">Phone</label>
-      <input type="text" id="phone" name="phone">
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p style="margin-top: 2rem; text-align: center;">Or email: <a href="mailto:matt@mattgage.net" style="color: #5289fa; text-decoration: none; font-weight: bold;">matt@mattgage.net</a></p>
-    <p style="text-align: center; margin-top: 1rem;">Serving NW Iowa, South Dakota, North Dakota, Minnesota, and Nebraska</p>
-  </section>
-  <footer>
-    <p>Matt Gage Consulting • Sioux Falls, SD | <a href="mailto:matt@mattgage.net">matt@mattgage.net</a></p>
-    <p>&copy; 2026 Matt Gage Consulting</p>
+
+  <main id="main-content" role="main">
+    <section class="hero" aria-label="Contact information">
+      <h2>Let's Start Planning Your Perfect Event</h2>
+      <p>Whether you're ready to book or just exploring options, we're here to help. Schedule a tour, request a quote, or simply reach out with questions. Our team typically responds within 24 hours.</p>
+    </section>
+
+    <section aria-labelledby="contact-methods-heading">
+      <h2 id="contact-methods-heading">Get in Touch</h2>
+      <div class="grid">
+        <div class="event-card">
+          <h3>Call Us</h3>
+          <p><strong><a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a></strong></p>
+          <p>Speak directly with our event team Monday through Friday, 9 AM to 5 PM Central Time. We're happy to answer questions, check availability, or schedule a tour over the phone.</p>
+        </div>
+        <div class="event-card">
+          <h3>Visit Us</h3>
+          <p><strong>The Chapel</strong><br>
+          610 S Dakota Ave<br>
+          Sioux Falls, SD 57104</p>
+          <p>Located in downtown Sioux Falls. Walk-ins welcome during business hours, but we recommend scheduling a tour for the full experience.</p>
+        </div>
+        <div class="event-card">
+          <h3>Email</h3>
+          <p><strong><a href="mailto:contact@sfchapel.com" class="link-primary">contact@sfchapel.com</a></strong></p>
+          <p>Send us an email with your questions, event details, or preferred tour dates. We'll respond within one business day with the information you need.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tour" aria-labelledby="tour-heading">
+      <h2 id="tour-heading">Schedule a Venue Tour</h2>
+      <p>Experience The Chapel in person. See our beautiful spaces, meet our team, and envision your perfect event. Tours typically last 30-45 minutes and are available Monday through Friday, with weekend appointments by arrangement.</p>
+      <form action="mailto:contact@sfchapel.com" method="post" enctype="text/plain" aria-label="Tour scheduling form">
+        <label for="tour-name">Name <span aria-label="required">*</span></label>
+        <input type="text" id="tour-name" name="name" required aria-required="true" autocomplete="name">
+
+        <label for="tour-email">Email <span aria-label="required">*</span></label>
+        <input type="email" id="tour-email" name="email" required aria-required="true" autocomplete="email">
+
+        <label for="tour-phone">Phone <span aria-label="required">*</span></label>
+        <input type="tel" id="tour-phone" name="phone" required aria-required="true" autocomplete="tel">
+
+        <label for="tour-date">Preferred Tour Date <span class="visually-hidden">(optional)</span></label>
+        <input type="date" id="tour-date" name="tour-date">
+
+        <label for="tour-time">Preferred Time <span class="visually-hidden">(optional)</span></label>
+        <select id="tour-time" name="tour-time">
+          <option value="">Select a time</option>
+          <option value="morning">Morning (9 AM - 12 PM)</option>
+          <option value="afternoon">Afternoon (12 PM - 3 PM)</option>
+          <option value="late-afternoon">Late Afternoon (3 PM - 5 PM)</option>
+          <option value="weekend">Weekend (by appointment)</option>
+        </select>
+
+        <label for="tour-event-type">Event Type <span class="visually-hidden">(optional)</span></label>
+        <select id="tour-event-type" name="event-type">
+          <option value="">Select event type</option>
+          <option value="wedding">Wedding</option>
+          <option value="corporate">Corporate Event</option>
+          <option value="family">Family Gathering</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="tour-message">Questions or Special Requests <span class="visually-hidden">(optional)</span></label>
+        <textarea id="tour-message" name="message" rows="4" placeholder="Let us know if you have any specific questions or requests for your tour..."></textarea>
+
+        <button type="submit">Request Tour</button>
+      </form>
+      <p class="text-center" style="margin-top: 1.5rem;"><em>Prefer to call? Reach us at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a> to schedule your tour.</em></p>
+    </section>
+
+    <section id="book" aria-labelledby="booking-heading" class="testimonials">
+      <h2 id="booking-heading">Request an Event Quote</h2>
+      <p>Tell us about your event and we'll provide a customized proposal with package options and pricing. The more details you share, the better we can tailor our recommendations to your vision and budget.</p>
+      <form action="mailto:contact@sfchapel.com" method="post" enctype="text/plain" aria-label="Event booking form">
+        <label for="book-name">Name <span aria-label="required">*</span></label>
+        <input type="text" id="book-name" name="name" required aria-required="true" autocomplete="name">
+
+        <label for="book-email">Email <span aria-label="required">*</span></label>
+        <input type="email" id="book-email" name="email" required aria-required="true" autocomplete="email">
+
+        <label for="book-phone">Phone <span aria-label="required">*</span></label>
+        <input type="tel" id="book-phone" name="phone" required aria-required="true" autocomplete="tel">
+
+        <label for="book-organization">Company/Organization <span class="visually-hidden">(optional)</span></label>
+        <input type="text" id="book-organization" name="organization" autocomplete="organization">
+
+        <label for="book-event-type">Event Type <span aria-label="required">*</span></label>
+        <select id="book-event-type" name="event-type" required aria-required="true">
+          <option value="">Select event type</option>
+          <option value="wedding">Wedding</option>
+          <option value="corporate-half-day">Corporate Event - Half Day</option>
+          <option value="corporate-full-day">Corporate Event - Full Day</option>
+          <option value="corporate-multi-day">Corporate Event - Multi-Day</option>
+          <option value="family-small">Family Gathering - Small (20-40 guests)</option>
+          <option value="family-medium">Family Celebration - Medium (40-100 guests)</option>
+          <option value="family-reunion">Family Reunion - Large (100+ guests)</option>
+          <option value="other">Other Event Type</option>
+        </select>
+
+        <label for="book-date">Preferred Event Date <span class="visually-hidden">(optional)</span></label>
+        <input type="date" id="book-date" name="event-date">
+
+        <label for="book-alternate-date">Alternate Date <span class="visually-hidden">(optional)</span></label>
+        <input type="date" id="book-alternate-date" name="alternate-date">
+
+        <label for="book-guest-count">Estimated Guest Count <span class="visually-hidden">(optional)</span></label>
+        <input type="number" id="book-guest-count" name="guest-count" min="1" max="200" placeholder="e.g., 100">
+
+        <label for="book-budget">Estimated Budget Range <span class="visually-hidden">(optional)</span></label>
+        <select id="book-budget" name="budget">
+          <option value="">Select budget range</option>
+          <option value="under-2000">Under $2,000</option>
+          <option value="2000-5000">$2,000 - $5,000</option>
+          <option value="5000-10000">$5,000 - $10,000</option>
+          <option value="10000-15000">$10,000 - $15,000</option>
+          <option value="15000-plus">$15,000+</option>
+          <option value="flexible">Flexible</option>
+        </select>
+
+        <label for="book-services">Services Needed <span class="visually-hidden">(optional, select all that apply)</span></label>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+            <input type="checkbox" name="catering" value="yes" style="width: auto; margin-right: 0.5rem;">
+            Catering
+          </label>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+            <input type="checkbox" name="bar-service" value="yes" style="width: auto; margin-right: 0.5rem;">
+            Bar Service
+          </label>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+            <input type="checkbox" name="av-equipment" value="yes" style="width: auto; margin-right: 0.5rem;">
+            AV Equipment & Tech Support
+          </label>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+            <input type="checkbox" name="event-coordination" value="yes" style="width: auto; margin-right: 0.5rem;">
+            Full Event Coordination
+          </label>
+          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
+            <input type="checkbox" name="lodging" value="yes" style="width: auto; margin-right: 0.5rem;">
+            Guest Lodging
+          </label>
+        </div>
+
+        <label for="book-message">Tell Us About Your Event <span aria-label="required">*</span></label>
+        <textarea id="book-message" name="message" rows="6" required aria-required="true" placeholder="Share your vision, special requirements, or any questions you have..."></textarea>
+
+        <button type="submit">Request Quote</button>
+      </form>
+      <p class="text-center" style="margin-top: 1.5rem;"><em>Want to discuss your event by phone? Call us at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a>.</em></p>
+    </section>
+
+    <section aria-labelledby="hours-heading">
+      <h2 id="hours-heading">Hours & Location</h2>
+      <div class="grid">
+        <div class="event-card">
+          <h3>Office Hours</h3>
+          <p><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM<br>
+          <strong>Saturday:</strong> By Appointment<br>
+          <strong>Sunday:</strong> Closed</p>
+          <p>Event hours vary based on your package and needs. We're flexible and can accommodate evening and weekend events.</p>
+        </div>
+        <div class="event-card">
+          <h3>Location & Parking</h3>
+          <p><strong>The Chapel</strong><br>
+          610 S Dakota Ave<br>
+          Sioux Falls, SD 57104</p>
+          <p>Private parking lot on-site plus street parking. Easily accessible from all major highways. <a href="https://maps.google.com/?q=610+S+Dakota+Ave+Sioux+Falls+SD+57104" class="link-primary" target="_blank" rel="noopener">Get Directions →</a></p>
+        </div>
+        <div class="event-card">
+          <h3>Response Time</h3>
+          <p>We strive to respond to all inquiries within one business day. During peak wedding season (May-October), responses may take up to 48 hours.</p>
+          <p>For urgent requests or same-week tours, please call us directly at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Contact FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Do I need an appointment to visit The Chapel?</h3>
+          <p>While walk-ins are welcome during business hours, we highly recommend scheduling a tour so we can give you our full attention, show you all our spaces, and answer your questions thoroughly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How quickly can I book an event?</h3>
+          <p>We can accommodate events on relatively short notice depending on availability. For weddings, we recommend booking 12-18 months in advance. Corporate events and family gatherings may have more flexible timelines.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What happens after I submit a form?</h3>
+          <p>Our event team will review your information and respond within one business day via email or phone. For tour requests, we'll confirm your preferred date/time or suggest alternatives. For event quotes, we'll schedule a consultation to discuss your needs in detail.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I visit The Chapel if I'm from out of town?</h3>
+          <p>Absolutely! Many of our clients are planning destination events. We offer flexible tour times and can also arrange virtual tours via video call if you can't visit in person before booking.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is there a fee for tours or consultations?</h3>
+          <p>No, tours and initial event consultations are always complimentary. We want you to experience The Chapel and learn about our services without any obligation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-heading" class="cta-section">
+      <h2 id="cta-heading">We Can't Wait to Hear From You</h2>
+      <p>Whether you're planning the wedding of your dreams, organizing a corporate retreat, or celebrating a family milestone, The Chapel is here to make it extraordinary.</p>
+      <div class="cta-buttons">
+        <a href="#tour" class="cta" aria-label="Jump to tour scheduling form">Schedule a Tour</a>
+        <a href="#book" class="cta cta-secondary-large" aria-label="Jump to event booking form">Request a Quote</a>
+        <a href="tel:+16053761847" class="cta cta-secondary-large" aria-label="Call The Chapel">Call (605) 376-1847</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>The Chapel</h3>
+        <p>610 S Dakota Ave<br>Sioux Falls, SD 57104</p>
+        <p><a href="tel:+16053761847" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+        <p><a href="https://www.sfchapel.com" aria-label="Visit The Chapel website">www.sfchapel.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="events.html">Host Your Event</a></li>
+          <li><a href="venue.html">Venue Features</a></li>
+          <li><a href="packages.html">Packages & Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Visit The Chapel on Facebook" class="social-icon">Facebook</a>
+          <a href="#" aria-label="Visit The Chapel on Instagram" class="social-icon">Instagram</a>
+          <a href="#" aria-label="Visit The Chapel on Pinterest" class="social-icon">Pinterest</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Chapel Event Venue | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </div>
   </footer>
 </body>
 </html>

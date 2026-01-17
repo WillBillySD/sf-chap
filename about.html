@@ -2,61 +2,242 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About Matt Gage Consulting</title>
+  <title>About The Chapel | Event Venue History & Team</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; margin:0; background:#f6f4e6; color:#2D3748; }
-    header, nav, section, footer { padding:2rem; }
-    header { background: linear-gradient(135deg, #5289fa 70%, #43d9c4 100%); color: #fff; border-radius: 0 0 44px 44px; }
-    nav { background: #fcfcfc; display: flex; gap:2rem; align-items:center; justify-content:center; margin-top:-24px; border-radius: 0 0 26px 26px; box-shadow: 0 4px 14px #e3e3e3; }
-    nav a { color: #5289fa; text-decoration: none; font-weight: bold; padding: 0.5rem 1rem; border-radius: 8px; transition: background 0.2s; }
-    nav a:hover { background: #43d9c4; color: #fff; }
-    section { max-width: 900px; margin: auto; }
-    footer { background:linear-gradient(90deg, #23293a 90%, #43d9c4 100%); color:#fff; text-align:center; border-radius:44px 44px 0 0; margin-top:4rem; }
-    footer a { color:#43d9c4 !important; text-decoration:underline; }
-    @media (max-width: 600px) {nav {flex-direction:column;gap:1rem;} header, footer { border-radius: 0; }}
-  </style>
+  <meta name="description" content="Learn about The Chapel's history, our team, and our commitment to creating unforgettable events in Sioux Falls. Discover the story behind our historic venue.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>About Matt Gage Consulting</h1>
-    <p>Local Expertise Meets Modern Technology</p>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <h1>The Chapel</h1>
+    <p>Sioux Falls' Premier Event Venue</p>
+    <div class="header-ctas">
+      <a href="contact.html#tour" class="cta-secondary" aria-label="Schedule a tour of The Chapel">Schedule a Tour</a>
+      <a href="contact.html#book" class="cta-primary" aria-label="Book The Chapel for your event">Book Your Event</a>
+    </div>
   </header>
-  <nav>
+
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="blog.html">Blog</a>
+    <a href="events.html">Host Your Event</a>
+    <a href="venue.html">Venue Features</a>
+    <a href="packages.html">Packages & Pricing</a>
+    <a href="about.html" aria-current="page">About</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <section>
-    <h2>Who We Are</h2>
-    <p>Matt Gage Consulting is dedicated to helping small businesses in NW Iowa, SD, ND, MN, and NE thrive. With over two decades of experience, we deliver clear, actionable guidance and use modern tools to help your business stand out—locally and online.</p>
-  </section>
-  <section>
-    <h2>Our Mission</h2>
-    <p>Empower local entrepreneurs to build lasting businesses. We're here to simplify tech, deliver powerful ROI, and make you confident in your next business step.</p>
-  </section>
-  <section>
-    <h2>Our Story</h2>
-    <ul>
-      <li>2005: Founded in Sioux Falls with a vision for helping Midwest businesses use technology for growth.</li>
-      <li>2010–2026: Helped hundreds of companies modernize marketing, start selling online, and adopt automation.</li>
-      <li>2026: Innovating with AI, remote teams, and business tools for the next generation of small businesses.</li>
-    </ul>
-  </section>
-  <section>
-    <h2>What Makes Us Different?</h2>
-    <ul>
-      <li>Deep roots in Midwest business culture & community</li>
-      <li>Tech-first, but people-focused consulting</li>
-      <li>No generic advice—fully personalized solutions</li>
-      <li>Project transparency and affordable pricing</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Matt Gage Consulting • Sioux Falls, SD | <a href="mailto:matt@mattgage.net">matt@mattgage.net</a></p>
-    <p>&copy; 2026 Matt Gage Consulting</p>
+
+  <main id="main-content" role="main">
+    <section class="hero" aria-label="About The Chapel introduction">
+      <h2>A Legacy of Celebration</h2>
+      <p>For over a century, The Chapel has stood as a landmark in downtown Sioux Falls, bearing witness to countless love stories, family milestones, and community gatherings. Today, we honor that legacy while creating new memories for generations to come.</p>
+    </section>
+
+    <section aria-labelledby="story-heading">
+      <h2 id="story-heading">Our Story</h2>
+      <div class="grid">
+        <div class="event-card">
+          <h3>Historic Beginnings</h3>
+          <p>Built in the early 1900s, The Chapel originally served as a place of worship and community gathering for Sioux Falls residents. Its beautiful architecture, featuring soaring ceilings, stained glass windows, and intricate woodwork, reflected the craftsmanship and artistry of the era.</p>
+        </div>
+        <div class="event-card">
+          <h3>Thoughtful Restoration</h3>
+          <p>After years of careful restoration, we've preserved the building's historic character while incorporating modern amenities. Every detail—from the restored original floors to the state-of-the-art climate control—has been thoughtfully chosen to honor the past while serving today's needs.</p>
+        </div>
+        <div class="event-card">
+          <h3>A New Chapter</h3>
+          <p>Today, The Chapel continues its legacy as a gathering place, now serving as Sioux Falls' premier event venue. We're proud to host weddings, corporate events, and family celebrations, creating new memories in a space steeped in history.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="philosophy-heading" class="testimonials">
+      <h2 id="philosophy-heading">Our Philosophy</h2>
+      <div class="grid">
+        <div class="testimonial-card">
+          <h3>Excellence in Every Detail</h3>
+          <p>We believe that exceptional events come from meticulous attention to every detail. From the initial consultation to the final toast, our team ensures that every element of your event is executed flawlessly.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>Personalized Service</h3>
+          <p>No two events are alike, and neither should the planning process be. We take time to understand your vision, preferences, and priorities, then customize our services to match your unique needs.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>Creating Memories</h3>
+          <p>We're not just providing a venue—we're helping create memories that will last a lifetime. Our goal is to ensure that you and your guests experience something truly special and unforgettable.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>Community Connection</h3>
+          <p>As a historic downtown landmark, we're deeply connected to the Sioux Falls community. We partner with local vendors, support local causes, and take pride in being part of this vibrant city's fabric.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>Sustainability & Stewardship</h3>
+          <p>We're committed to preserving our historic building for future generations while operating sustainably. From energy-efficient systems to locally-sourced catering, we strive to minimize our environmental impact.</p>
+        </div>
+        <div class="testimonial-card">
+          <h3>Integrity & Transparency</h3>
+          <p>We believe in honest communication, transparent pricing, and following through on our commitments. When you work with The Chapel, you can trust that we'll deliver exactly what we promise.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet Our Team</h2>
+      <p>Behind every successful event is a dedicated team of professionals who care deeply about creating exceptional experiences.</p>
+      <div class="grid">
+        <div class="event-card">
+          <h3>Event Coordination</h3>
+          <p>Our experienced event coordinators guide you through every step of the planning process, from your first consultation to the last dance. They're experts in logistics, timing, and turning visions into reality.</p>
+        </div>
+        <div class="event-card">
+          <h3>Culinary Team</h3>
+          <p>Led by our executive chef, our culinary team creates custom menus using seasonal, locally-sourced ingredients. From elegant plated dinners to creative buffets, they bring exceptional flavor to every event.</p>
+        </div>
+        <div class="event-card">
+          <h3>Hospitality Staff</h3>
+          <p>Our servers, bartenders, and hospitality staff are trained professionals who provide warm, attentive service. They ensure your guests feel welcomed and well-cared-for throughout your event.</p>
+        </div>
+        <div class="event-card">
+          <h3>Technical Support</h3>
+          <p>Our AV technicians ensure that presentations run smoothly, sound systems work perfectly, and lighting creates the right ambiance. They're on-site during events to handle any technical needs.</p>
+        </div>
+        <div class="event-card">
+          <h3>Venue Management</h3>
+          <p>Our management team oversees all aspects of venue operations, ensuring that every space is immaculately maintained and that all systems function flawlessly for your event.</p>
+        </div>
+        <div class="event-card">
+          <h3>Sales & Planning</h3>
+          <p>Our sales team helps you explore package options, create custom proposals, and understand how The Chapel can best serve your event needs. They're your first point of contact and ongoing resource.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Recognition & Partnerships</h2>
+      <div class="grid">
+        <div>
+          <h3>Award-Winning Venue</h3>
+          <p>The Chapel has been recognized as one of Sioux Falls' premier event venues, earning accolades for our historic preservation, exceptional service, and culinary excellence.</p>
+        </div>
+        <div>
+          <h3>Preferred Vendor Network</h3>
+          <p>We've built strong relationships with Sioux Falls' best wedding and event vendors—photographers, florists, DJs, and more—who know our venue and deliver outstanding results.</p>
+        </div>
+        <div>
+          <h3>Community Involvement</h3>
+          <p>We're proud supporters of local nonprofits, schools, and community organizations, offering our space for charitable events and contributing to causes that strengthen our community.</p>
+        </div>
+        <div>
+          <h3>Professional Affiliations</h3>
+          <p>Our team members hold certifications in event planning, hospitality management, and culinary arts, and we maintain memberships in professional industry organizations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>How long has The Chapel been operating as an event venue?</h3>
+          <p>While the building itself dates back to the early 1900s, we've been operating as a premier event venue since completing our extensive restoration. We've hosted hundreds of successful weddings, corporate events, and family celebrations.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What makes The Chapel different from other venues?</h3>
+          <p>Our combination of historic elegance, modern amenities, exceptional culinary offerings, and personalized service sets us apart. We're not just a beautiful space—we're a full-service venue with an experienced team dedicated to making your event perfect.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can we tour The Chapel before booking?</h3>
+          <p>Absolutely! We encourage tours so you can experience our spaces in person, meet our team, and envision your event. <a href="contact.html#tour" class="link-primary">Schedule a tour</a> at your convenience.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you only host certain types of events?</h3>
+          <p>While we specialize in weddings, corporate events, and family gatherings, we're equipped to host a wide variety of celebrations. Contact us to discuss your specific event needs—we're flexible and creative in adapting our spaces.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How far in advance should we book?</h3>
+          <p>Popular dates (especially weekend weddings in peak season) often book 12-18 months in advance. However, we sometimes have availability for shorter timelines, especially for weekday events or off-peak seasons. Contact us to check availability for your preferred date.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's included in your event coordination services?</h3>
+          <p>Our coordination services include initial planning consultations, vendor recommendations and coordination, timeline development, setup oversight, day-of event management, and problem-solving support. We're with you every step of the way.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can you accommodate guests with special needs or accessibility requirements?</h3>
+          <p>Yes, The Chapel is fully ADA-compliant with accessible entrances, elevators, restrooms, and parking. We can also accommodate dietary restrictions, sensory sensitivities, and other special needs. Just let us know what you require.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer tasting appointments for catering?</h3>
+          <p>Yes! For wedding packages and large events, we offer tasting appointments where you can sample menu options and work with our culinary team to customize your selections. Tastings are scheduled as part of the planning process.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-info-heading">
+      <h2 id="contact-info-heading">Visit Us</h2>
+      <div class="grid">
+        <div class="event-card">
+          <h3>Location</h3>
+          <p><strong>The Chapel</strong><br>
+          610 S Dakota Ave<br>
+          Sioux Falls, SD 57104</p>
+          <p>Located in the heart of downtown Sioux Falls, easily accessible from all major highways and close to hotels, restaurants, and attractions.</p>
+        </div>
+        <div class="event-card">
+          <h3>Contact Information</h3>
+          <p><strong>Phone:</strong> <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a></p>
+          <p><strong>Website:</strong> <a href="https://www.sfchapel.com" class="link-primary">www.sfchapel.com</a></p>
+          <p>Our team typically responds to inquiries within 24 hours during business days.</p>
+        </div>
+        <div class="event-card">
+          <h3>Schedule a Tour</h3>
+          <p>The best way to experience The Chapel is in person. Tours are available Monday through Friday, with weekend appointments by arrangement.</p>
+          <p><a href="contact.html#tour" class="cta" aria-label="Schedule a venue tour">Schedule Your Tour</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="cta-heading" class="cta-section">
+      <h2 id="cta-heading">Let's Create Something Memorable</h2>
+      <p>We'd love to learn about your event and show you how The Chapel can help make it extraordinary. Contact us today to start planning.</p>
+      <div class="cta-buttons">
+        <a href="contact.html#tour" class="cta" aria-label="Schedule a tour of The Chapel">Schedule a Tour</a>
+        <a href="contact.html#book" class="cta cta-secondary-large" aria-label="Request event information">Request Information</a>
+        <a href="contact.html" class="cta cta-secondary-large" aria-label="Contact The Chapel">Contact Us</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>The Chapel</h3>
+        <p>610 S Dakota Ave<br>Sioux Falls, SD 57104</p>
+        <p><a href="tel:+16053761847" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+        <p><a href="https://www.sfchapel.com" aria-label="Visit The Chapel website">www.sfchapel.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="events.html">Host Your Event</a></li>
+          <li><a href="venue.html">Venue Features</a></li>
+          <li><a href="packages.html">Packages & Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Visit The Chapel on Facebook" class="social-icon">Facebook</a>
+          <a href="#" aria-label="Visit The Chapel on Instagram" class="social-icon">Instagram</a>
+          <a href="#" aria-label="Visit The Chapel on Pinterest" class="social-icon">Pinterest</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Chapel Event Venue | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </div>
   </footer>
 </body>
 </html>
