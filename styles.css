@@ -1,18 +1,19 @@
 /* CSS Variables for easy theming */
 :root {
-  --color-primary: #5289fa;
-  --color-accent: #43d9c4;
-  --color-dark: #23293a;
-  --color-text: #2D3748;
-  --color-background: #f6f4e6;
-  --color-card: #fcfcfc;
-  --color-white: #fff;
-  --color-shadow-light: #e3e3e3;
-  --color-shadow-medium: #e7e9ec;
-  --color-shadow-card: #d7e9ef;
-  --color-shadow-hover: #b1d6f6;
-  --color-shadow-teal: #a4f6e3;
-  --color-border: #d3d3d3;
+  /* Arctic White, Slate, Gold, Natural Wood Tones, Charcoal Color Scheme */
+  --color-primary: #64748B;        /* Slate - primary elements, links */
+  --color-accent: #D4AF37;         /* Gold - CTAs, accents, highlights */
+  --color-dark: #2C3639;           /* Charcoal - footer, dark backgrounds */
+  --color-text: #3E4A59;           /* Charcoal text - body copy */
+  --color-background: #F5F1E8;     /* Natural wood/warm cream - page background */
+  --color-card: #FAFBFC;           /* Arctic white - card backgrounds */
+  --color-white: #FFFFFF;          /* Pure white */
+  --color-shadow-light: #D4CEC4;   /* Warm neutral shadow */
+  --color-shadow-medium: #C5BDB1;  /* Medium warm shadow */
+  --color-shadow-card: #E0D8CC;    /* Soft wood-tone shadow */
+  --color-shadow-hover: #B8A992;   /* Wood-tone hover shadow */
+  --color-shadow-accent: #E5D5A8;  /* Gold-tinted shadow */
+  --color-border: #D1C7B8;         /* Natural border color */
 
   --font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 
@@ -163,7 +164,7 @@ ul li {
   font-size: 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 2px 6px var(--color-shadow-teal);
+  box-shadow: 0 2px 6px var(--color-shadow-accent);
   transition: background var(--transition-fast);
   font-family: inherit;
   display: inline-block;
