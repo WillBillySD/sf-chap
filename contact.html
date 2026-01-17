@@ -7,39 +7,51 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
     <h1>Contact The Chapel</h1>
     <p>Let's Find Your Perfect Home Together</p>
   </header>
-  <nav>
+
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="photos.html">Photos</a>
     <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" aria-current="page">Contact</a>
   </nav>
-  <section>
-    <h2>Schedule a Showing or Consultation</h2>
-    <form action="mailto:contact@sfchapel.com" method="post" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-      <label for="company">Company</label>
-      <input type="text" id="company" name="company">
-      <label for="phone">Phone</label>
-      <input type="text" id="phone" name="phone">
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p class="text-center" style="margin-top: 2rem;">Or call us: <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a></p>
-    <p class="text-center" style="margin-top: 1rem;">Visit us at 610 S Dakota Ave, Sioux Falls, SD 57104 | Open Monday-Friday, closes 5 PM</p>
-  </section>
-  <footer>
-    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847">(605) 376-1847</a></p>
-    <p><a href="https://www.sfchapel.com">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Schedule a Showing or Consultation</h2>
+      <form action="mailto:contact@sfchapel.com" method="post" enctype="text/plain" aria-label="Contact form">
+        <label for="name">Name <span aria-label="required">*</span></label>
+        <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+
+        <label for="email">Email <span aria-label="required">*</span></label>
+        <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+
+        <label for="company">Company <span class="visually-hidden">(optional)</span></label>
+        <input type="text" id="company" name="company" autocomplete="organization">
+
+        <label for="phone">Phone <span class="visually-hidden">(optional)</span></label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel">
+
+        <label for="message">Your Message <span aria-label="required">*</span></label>
+        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="text-center" style="margin-top: 2rem;">Or call us: <a href="tel:+16053761847" class="link-primary-bold" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+      <p class="text-center" style="margin-top: 1rem;">Visit us at 610 S Dakota Ave, Sioux Falls, SD 57104 | Open Monday-Friday, closes 5 PM</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+    <p><a href="https://www.sfchapel.com" aria-label="Visit The Chapel website">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
     <p>&copy; 2026 The Chapel Real Estate</p>
   </footer>
 </body>

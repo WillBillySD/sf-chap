@@ -7,47 +7,57 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
     <h1>About The Chapel</h1>
     <p>Your Trusted Partner in Sioux Falls Real Estate</p>
   </header>
-  <nav>
+
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a href="about.html" aria-current="page">About</a>
     <a href="services.html">Services</a>
     <a href="photos.html">Photos</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <section>
-    <h2>Who We Are</h2>
-    <p>The Chapel is a premier real estate agency located in the heart of Sioux Falls, South Dakota. We're dedicated to helping individuals and families find their perfect home, sell their property with confidence, and make smart real estate investments in the greater Sioux Falls area.</p>
-  </section>
-  <section>
-    <h2>Our Mission</h2>
-    <p>To provide exceptional real estate services with integrity, expertise, and personalized attention. We're committed to making your real estate journey smooth, transparent, and successful.</p>
-  </section>
-  <section>
-    <h2>Our Story</h2>
-    <ul>
-      <li>Established as a trusted name in Sioux Falls real estate</li>
-      <li>Located at 610 S Dakota Ave in downtown Sioux Falls for convenient access</li>
-      <li>Built a reputation for honest service and successful transactions</li>
-      <li>Committed to staying current with market trends and industry best practices</li>
-    </ul>
-  </section>
-  <section>
-    <h2>What Makes Us Different?</h2>
-    <ul>
-      <li>Deep knowledge of Sioux Falls neighborhoods and property values</li>
-      <li>Client-first approach with personalized attention</li>
-      <li>No high-pressure tactics—your timeline, your decisions</li>
-      <li>Complete transparency throughout the buying or selling process</li>
-    </ul>
-  </section>
-  <footer>
-    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847">(605) 376-1847</a></p>
-    <p><a href="https://www.sfchapel.com">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="who-we-are-heading">
+      <h2 id="who-we-are-heading">Who We Are</h2>
+      <p>The Chapel is a premier real estate agency located in the heart of Sioux Falls, South Dakota. We're dedicated to helping individuals and families find their perfect home, sell their property with confidence, and make smart real estate investments in the greater Sioux Falls area.</p>
+    </section>
+
+    <section aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Our Mission</h2>
+      <p>To provide exceptional real estate services with integrity, expertise, and personalized attention. We're committed to making your real estate journey smooth, transparent, and successful.</p>
+    </section>
+
+    <section aria-labelledby="story-heading">
+      <h2 id="story-heading">Our Story</h2>
+      <ul>
+        <li>Established as a trusted name in Sioux Falls real estate</li>
+        <li>Located at 610 S Dakota Ave in downtown Sioux Falls for convenient access</li>
+        <li>Built a reputation for honest service and successful transactions</li>
+        <li>Committed to staying current with market trends and industry best practices</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="different-heading">
+      <h2 id="different-heading">What Makes Us Different?</h2>
+      <ul>
+        <li>Deep knowledge of Sioux Falls neighborhoods and property values</li>
+        <li>Client-first approach with personalized attention</li>
+        <li>No high-pressure tactics—your timeline, your decisions</li>
+        <li>Complete transparency throughout the buying or selling process</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+    <p><a href="https://www.sfchapel.com" aria-label="Visit The Chapel website">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
     <p>&copy; 2026 The Chapel Real Estate</p>
   </footer>
 </body>

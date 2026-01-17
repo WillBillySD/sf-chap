@@ -7,21 +7,26 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
     <h1>Property Photos</h1>
     <p>Browse Our Latest Listings and Featured Properties</p>
   </header>
-  <nav>
+
+  <nav role="navigation" aria-label="Main navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
-    <a href="photos.html">Photos</a>
+    <a href="photos.html" aria-current="page">Photos</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <section>
-    <h2>Featured Properties</h2>
-    <p>Explore our curated selection of homes and investment properties available in Sioux Falls and surrounding areas.</p>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="featured-properties-heading">
+      <h2 id="featured-properties-heading">Featured Properties</h2>
+      <p>Explore our curated selection of homes and investment properties available in Sioux Falls and surrounding areas.</p>
 
     <div class="grid">
       <div>
@@ -48,15 +53,18 @@
         <h3>Commercial Properties</h3>
         <p>View available commercial real estate opportunities in Sioux Falls.</p>
       </div>
-    </div>
-  </section>
-  <section>
-    <h2>Virtual Tours</h2>
-    <p>Can't make it to a showing in person? We offer comprehensive virtual tours and video walkthroughs of our featured properties. Contact us to schedule a virtual showing.</p>
-  </section>
-  <footer>
-    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847">(605) 376-1847</a></p>
-    <p><a href="https://www.sfchapel.com">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="virtual-tours-heading">
+      <h2 id="virtual-tours-heading">Virtual Tours</h2>
+      <p>Can't make it to a showing in person? We offer comprehensive virtual tours and video walkthroughs of our featured properties. <a href="contact.html" aria-label="Contact us to schedule a virtual showing">Contact us</a> to schedule a virtual showing.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+    <p><a href="https://www.sfchapel.com" aria-label="Visit The Chapel website">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
     <p>&copy; 2026 The Chapel Real Estate</p>
   </footer>
 </body>

@@ -8,25 +8,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
     <h1>The Chapel</h1>
     <p>Premier Real Estate Services in Sioux Falls, South Dakota</p>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
+
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="index.html" aria-current="page">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="photos.html">Photos</a>
     <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <section class="hero">
-    <h2>Find Your Perfect Home in Sioux Falls</h2>
-    <p>Expert real estate services for buying, selling, and investing in the Sioux Falls area. Professional guidance you can trust.</p>
-    <a href="contact.html" class="cta">Schedule a Showing</a>
-  </section>
-  <section>
-    <h2>Our Services</h2>
+  <main id="main-content" role="main">
+    <section class="hero" aria-label="Welcome and call to action">
+      <h2>Find Your Perfect Home in Sioux Falls</h2>
+      <p>Expert real estate services for buying, selling, and investing in the Sioux Falls area. Professional guidance you can trust.</p>
+      <a href="contact.html" class="cta" aria-label="Schedule a showing with The Chapel">Schedule a Showing</a>
+    </section>
+
+    <section aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
     <div class="grid">
       <div>
         <h3>Home Buying</h3>
@@ -49,24 +54,28 @@
         <p>Full-service support for families and professionals moving to Sioux Falls.</p>
       </div>
     </div>
-  </section>
-  <section>
-    <h2>Why Choose The Chapel?</h2>
-    <ul>
-      <li>Deep knowledge of Sioux Falls neighborhoods and market trends</li>
-      <li>Personalized service tailored to your unique needs</li>
-      <li>Proven track record of successful transactions</li>
-      <li>Transparent communication throughout the process</li>
-      <li>Conveniently located at 610 S Dakota Ave in downtown Sioux Falls</li>
-    </ul>
-  </section>
-  <section>
-    <h2>Real Estate Insights</h2>
-    <p>Explore our <a href="blog.html">Blog</a> for market updates, home buying tips, and local Sioux Falls real estate news.</p>
-  </section>
-  <footer>
-    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847">(605) 376-1847</a></p>
-    <p><a href="https://www.sfchapel.com">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
+    </section>
+
+    <section aria-labelledby="why-choose-heading">
+      <h2 id="why-choose-heading">Why Choose The Chapel?</h2>
+      <ul>
+        <li>Deep knowledge of Sioux Falls neighborhoods and market trends</li>
+        <li>Personalized service tailored to your unique needs</li>
+        <li>Proven track record of successful transactions</li>
+        <li>Transparent communication throughout the process</li>
+        <li>Conveniently located at 610 S Dakota Ave in downtown Sioux Falls</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="insights-heading">
+      <h2 id="insights-heading">Real Estate Insights</h2>
+      <p>Explore our <a href="blog.html" aria-label="Visit our real estate blog">Blog</a> for market updates, home buying tips, and local Sioux Falls real estate news.</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>The Chapel • 610 S Dakota Ave, Sioux Falls, SD 57104 | <a href="tel:+16053761847" aria-label="Call The Chapel at (605) 376-1847">(605) 376-1847</a></p>
+    <p><a href="https://www.sfchapel.com" aria-label="Visit The Chapel website">www.sfchapel.com</a> | Open Monday-Friday, closes 5 PM</p>
     <p>&copy; 2026 The Chapel Real Estate</p>
   </footer>
 </body>
