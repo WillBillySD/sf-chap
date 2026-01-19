@@ -606,6 +606,41 @@ button[type="submit"]:focus {
   outline-offset: 2px;
 }
 
+/* Form Components */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-medium) 0;
+}
+
+legend {
+  font-weight: bold;
+  display: block;
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
+  padding: 0;
+}
+
+.checkbox-group {
+  margin-bottom: var(--spacing-medium);
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+  margin-bottom: 0;
+}
+
+.form-helper-text {
+  margin-top: 1.5rem;
+}
+
 /* Utility Classes */
 .text-center {
   text-align: center;

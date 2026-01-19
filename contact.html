@@ -96,7 +96,7 @@
 
         <button type="submit">Request Tour</button>
       </form>
-      <p class="text-center" style="margin-top: 1.5rem;"><em>Prefer to call? Reach us at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a> to schedule your tour.</em></p>
+      <p class="text-center form-helper-text"><em>Prefer to call? Reach us at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a> to schedule your tour.</em></p>
     </section>
 
     <section id="book" aria-labelledby="booking-heading" class="testimonials">
@@ -148,36 +148,38 @@
           <option value="flexible">Flexible</option>
         </select>
 
-        <label for="book-services">Services Needed <span class="visually-hidden">(optional, select all that apply)</span></label>
-        <div style="margin-bottom: 1.5rem;">
-          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
-            <input type="checkbox" name="catering" value="yes" style="width: auto; margin-right: 0.5rem;">
-            Catering
-          </label>
-          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
-            <input type="checkbox" name="bar-service" value="yes" style="width: auto; margin-right: 0.5rem;">
-            Bar Service
-          </label>
-          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
-            <input type="checkbox" name="av-equipment" value="yes" style="width: auto; margin-right: 0.5rem;">
-            AV Equipment & Tech Support
-          </label>
-          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
-            <input type="checkbox" name="event-coordination" value="yes" style="width: auto; margin-right: 0.5rem;">
-            Full Event Coordination
-          </label>
-          <label style="display: block; margin-bottom: 0.5rem; font-weight: normal;">
-            <input type="checkbox" name="lodging" value="yes" style="width: auto; margin-right: 0.5rem;">
-            Guest Lodging
-          </label>
-        </div>
+        <fieldset>
+          <legend>Services Needed <span class="visually-hidden">(optional, select all that apply)</span></legend>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="catering" value="yes">
+              Catering
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="bar-service" value="yes">
+              Bar Service
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="av-equipment" value="yes">
+              AV Equipment & Tech Support
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="event-coordination" value="yes">
+              Full Event Coordination
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="lodging" value="yes">
+              Guest Lodging
+            </label>
+          </div>
+        </fieldset>
 
         <label for="book-message">Tell Us About Your Event <span aria-label="required">*</span></label>
         <textarea id="book-message" name="message" rows="6" required aria-required="true" placeholder="Share your vision, special requirements, or any questions you have..."></textarea>
 
         <button type="submit">Request Quote</button>
       </form>
-      <p class="text-center" style="margin-top: 1.5rem;"><em>Want to discuss your event by phone? Call us at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a>.</em></p>
+      <p class="text-center form-helper-text"><em>Want to discuss your event by phone? Call us at <a href="tel:+16053761847" class="link-primary-bold">(605) 376-1847</a>.</em></p>
     </section>
 
     <section aria-labelledby="hours-heading">
