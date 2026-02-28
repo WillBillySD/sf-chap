@@ -1,0 +1,19 @@
+<section class="container section card">
+  <h2>{{ section.settings.heading }}</h2>
+  <div>{{ section.settings.content }}</div>
+  {% for block in section.blocks %}
+    {% render block %}
+  {% endfor %}
+</section>
+
+{% schema %}
+{
+  "name": "Rich content",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Heading", "default": "Wire code for app distro integrations"},
+    {"type": "richtext", "id": "content", "label": "Content", "default": "<p>Drop app blocks here for reviews, subscriptions, bundles, upsells, post-purchase offers, and analytics pixels. This section is intentionally app-ready so you can assemble your own distro stack quickly.</p>"}
+  ],
+  "blocks": [{"type": "@app"}],
+  "presets": [{"name": "Rich content"}]
+}
+{% endschema %}

@@ -1,0 +1,33 @@
+<header class="site-header">
+  <div class="container header-bar">
+    <div>
+      <a href="{{ routes.root_url }}" style="text-decoration:none;color:inherit;">
+        <strong style="font-size:1.4rem;">{{ section.settings.brand_title | default: shop.name }}</strong>
+      </a>
+      <p style="margin:.35rem 0 0;opacity:.9;">{{ section.settings.tagline }}</p>
+    </div>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      {% for link in section.settings.menu.links %}
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+      <a class="button button--outline" href="{{ routes.cart_url }}">Cart ({{ cart.item_count }})</a>
+      <a class="button button--primary" href="{{ routes.account_login_url }}">{{ section.settings.cta_label }}</a>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {"type": "text", "id": "brand_title", "label": "Brand title", "default": "Matt Gage Digital"},
+    {"type": "text", "id": "tagline", "label": "Tagline", "default": "Shopify Growth, SEO, and AI-backed conversion strategy"},
+    {"type": "link_list", "id": "menu", "label": "Menu", "default": "main-menu"},
+    {"type": "text", "id": "cta_label", "label": "CTA label", "default": "Book a consult"}
+  ]
+}
+{% endschema %}

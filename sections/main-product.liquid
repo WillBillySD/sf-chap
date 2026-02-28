@@ -1,0 +1,29 @@
+<section class="container section">
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:start;">
+    <div class="card">
+      {% if product.featured_image %}
+        {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'lazy', alt: product.title }}
+      {% endif %}
+    </div>
+    <div class="card">
+      <h1>{{ product.title }}</h1>
+      <p class="price">{{ product.price | money }}</p>
+      <div>{{ product.description }}</div>
+      {% form 'product', product %}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <button class="button button--primary" type="submit">Add to cart</button>
+      {% endform %}
+      {% for block in section.blocks %}
+        {% render block %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main product",
+  "settings": [],
+  "blocks": [{"type": "@app"}]
+}
+{% endschema %}

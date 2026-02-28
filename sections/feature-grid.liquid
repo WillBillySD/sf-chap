@@ -1,0 +1,35 @@
+<section class="container section">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="grid grid--3">
+    {% for block in section.blocks %}
+      <article class="card">
+        <h3>{{ block.settings.title }}</h3>
+        <p>{{ block.settings.copy }}</p>
+        {% if block.settings.link != blank %}
+          <a href="{{ block.settings.link }}">{{ block.settings.link_label }} →</a>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Feature grid",
+  "settings": [{"type": "text", "id": "heading", "label": "Heading", "default": "Core revenue engines"}],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {"type": "text", "id": "title", "label": "Title", "default": "SEO-led collections"},
+        {"type": "textarea", "id": "copy", "label": "Copy", "default": "Design category and product structures around terms buyers actually search for."},
+        {"type": "url", "id": "link", "label": "Link"},
+        {"type": "text", "id": "link_label", "label": "Link label", "default": "Learn more"}
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{"name": "Feature grid", "blocks": [{"type": "feature"}, {"type": "feature"}, {"type": "feature"}]}]
+}
+{% endschema %}
