@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main": {
+      "type": "rich-content",
+      "settings": {
+        "heading": "Page content",
+        "content": "<p>Use Shopify pages for service copy, FAQs, and conversion-focused landing content.</p>"
+      }
+    }
+  },
+  "order": ["main"]
+}

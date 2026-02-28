@@ -1,0 +1,17 @@
+<section class="container section">
+  <h1>{{ collection.title }}</h1>
+  <div class="product-grid">
+    {% for product in collection.products %}
+      {% render 'card-product', product: product %}
+    {% else %}
+      <p>No products found.</p>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main collection",
+  "settings": []
+}
+{% endschema %}

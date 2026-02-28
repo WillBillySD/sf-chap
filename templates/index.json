@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "hero": {"type": "hero", "settings": {}},
+    "features": {"type": "feature-grid", "settings": {}},
+    "apps": {"type": "rich-content", "settings": {}}
+  },
+  "order": ["hero", "features", "apps"]
+}

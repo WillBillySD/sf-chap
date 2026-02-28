@@ -1,0 +1,37 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3 style="margin-top:0;">{{ section.settings.brand }}</h3>
+      <p>{{ section.settings.address }}</p>
+      <p><a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a></p>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Quick links</h3>
+      <ul style="margin:0;padding-left:1rem;">
+        {% for link in section.settings.menu.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3 style="margin-top:0;">Integration zone</h3>
+      <p>Attach loyalty, reviews, and subscription apps here.</p>
+      {% for block in section.blocks %}
+        {% render block %}
+      {% endfor %}
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {"type": "text", "id": "brand", "label": "Brand", "default": "Matt Gage Digital"},
+    {"type": "textarea", "id": "address", "label": "Address or location", "default": "Midwest USA"},
+    {"type": "text", "id": "email", "label": "Email", "default": "hello@mattgagedigital.com"},
+    {"type": "link_list", "id": "menu", "label": "Footer menu", "default": "footer"}
+  ],
+  "blocks": [{"type": "@app"}]
+}
+{% endschema %}
